@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      height: 100vh;
+      background-color: rgb(23, 23, 23);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .rect1{
+      animation: fadein 1s;
+      background-color: rgb(50, 50, 50);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 20px;
+      padding: 20px;
+      width: 200px;
+      gap: 20px;
+    }
+    .rect2{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .rect3{
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+    }
+    button{
+      background-color: rgb(79, 79, 79);
+      border-radius: 10px;
+      width: 100px;
+      color: papayawhip;
+      text-align: center;
+      font-size: 11px;
+      font-family:Arial, Helvetica, sans-serif;
+      border-color: rgba(81, 81, 81, 0);
+      transition: 0.5s ease;
+      cursor: pointer;
+    }
+    .btn:hover .github{
+      background-color: papayawhip;
+      color: rgb(0, 0, 0);
+      width: 140px;
+      font-size: 15px;
+      rotate: -3deg;
+    }
+    .btn:hover .linkedin{
+      background-color: rgb(53, 112, 195);
+      color: rgb(255, 255, 255);
+      width: 140px;
+      font-size: 15px;
+      rotate: -3deg;
+    }    
+    .btn:hover .insta{
+      animation: fade 0.5s;
+      background: linear-gradient(95deg, rgb(96, 0, 128), rgb(193, 24, 108), yellow);
+      border-color: rgba(81, 81, 81, 0);
+      color: rgb(255, 255, 255);
+      width: 140px;
+      font-size: 15px;
+      rotate: -3deg;
+    }
+    .btn:hover .fb{
+      background-color: rgb(64, 75, 226);
+      color: rgb(255, 255, 255);
+      width: 140px;
+      font-size: 15px;
+      rotate: -3deg;
+    }
+    .btn:hover .yt{
+      background-color: rgb(213, 32, 32);
+      color: rgb(255, 255, 255);
+      width: 140px;
+      font-size: 15px;
+      rotate: -3deg;
+    }
+    @keyframes fadein{
+        from{opacity: 0; transform: translateY(-10px)}
+        to{opacity: 1;}
+    }
+    @keyframes fadeinu{
+        from{opacity: 0; transform: translateY(10px)}
+        to{opacity: 1;}
+    }
+    @keyframes fade{
+        from{opacity: 0.5;}
+        to{opacity: 1;}
+    }
+    @keyframes fadeout{
+        from{opacity: 1;}
+        to{opacity: 0;}
+    }
+    .logo{
+      position: absolute;
+      opacity: 0;
+      border-radius: 100%;
+      width: 30px;
+      margin-left: -20px;
+      margin-top: -10px;
+      transition: 0.5s ease 0s;
+    }
+    .btn:hover .logo{
+      opacity: 1;
+      margin-left: -25px;
+      margin-top: -5px;
+      width: 40px;
+      rotate: 7deg;
+    }
+    .attribution { animation: fadeinu 1s; font-size: 11px; text-align: center; color: papayawhip; font-family: Arial, Helvetica, sans-serif;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+  </style>
+</head>
+<body style="background-color: rgb(23, 23, 23);">
+  <div class="rect1">
+    
+    <div class="rect2">
+      <div class="rect3">
+        <img src="pexels-lastly-937782.jpg" style="border-radius: 100%; width: 100px; height: 100px;">
+        <h2 class="uname" style="font-family: Arial, Helvetica, sans-serif; color: papayawhip;">AbdelMadjid TAOUINAR</h2>
+      </div>
+      <div class="rect3">
+        <p style="color: greenyellow;">Chlef, Algeria</p>
+        <p style="color: papayawhip;">Front-end developer, Digital Artist and Content creator</p>
+      </div>
+    </div>
+    <div class="rect2">
+      <div class="btn"><a href="https://github.com/Nurd4377"><button class="github">GitHub</button></a><img class="logo" src="1711285331665.jpg"></div>
+      <div class="btn"><a href="https://dz.linkedin.com/in/abdelmadjid-taouinar-704744265"><button class="linkedin">LinkedIn</button></a><img class="logo" src="1711285356185.jpg"></div>
+      <div class="btn"><a href="https://www.instagram.com/nurpyt?igsh=a2pkdGZidDV0eGVk"><button class="insta">Instagram</button></a><img class="logo" src="1711285310747.jpg"></div>
+      <div class="btn"><a href="https://youtube.com/@nurpytn?si=WPMarEfp6cwgADxW"><button class="yt">YouTube</button></a><img class="logo" src="1711285373195.jpg"></div>
+      <div class="btn"><a href="https://www.facebook.com/abdelmadjid.nurpytn?mibextid=rS40aB7S9Ucbxw6v"><button class="fb">Facebook</button></a><img class="logo" src="1711285289185.jpg"></div>
+      
+      
+    </div>
+
+
+    
+  </div>  
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Abdelmadjid TAOUINAR</a>.
+  </div>
+</body>
+</html>
